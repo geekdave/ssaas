@@ -470,6 +470,9 @@ background-image: url(swarm.png)
 class: full-width, center, middle
 
 ???
+Move on to cooler problems! Forked testswarm
+Clean reports
+First started running on intervals - cuz slow and few resources
 
 ---
 
@@ -479,6 +482,10 @@ class: full-width, center, middle
 
 ???
 
+Massively parallel test runner
+Remember google criticism? too slow? too hard to isolate failures?
+Runs on every PR
+
 ---
 
 background-image: url(flakechart1.gif)
@@ -486,7 +493,8 @@ background-image: url(flakechart1.gif)
 class: full-width, center, middle
 
 ???
-
+Nagging feeling - what about the flake, sweeping under the rug?
+Haven't solved yet - but we can understand it
 ---
 
 background-image: url(flakechart2.gif)
