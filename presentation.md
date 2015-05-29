@@ -142,38 +142,52 @@ class: center, middle
 
 background-image: url(cupboard.jpg)
 
-class: full-width, center, middle
+class: full-width, left, top
+
+# Unit Tests
+
 
 ---
 
 background-image: url(car.jpg)
 
-class: full-width, center, middle
+class: full-width, left, top, white
+
+# End-To-End Tests (step 1)
+
 
 ---
 
 background-image: url(zombies2.jpg)
 
-class: bottom, left
-zombies
+class: full-width, left, top
+
+# End-To-End Tests (step 2)
+
 
 ---
 
 background-image: url(market1.jpg)
 
-class: full-width, center, middle
+class: full-width, left, bottom, white
+
+# End-To-End Tests (step 3)
+
 
 ---
 
 background-image: url(market2.jpg)
 
-class: full-width, center, middle
+class: full-width, left, bottom, white
+
+# End-To-End Tests (step 4)
+
 
 ---
 
-background-image: url(soup.jpg)
+background-image: url(brains.png)
 
-class: bottom, middle
+class: full-width, left, bottom, white
 
 ---
 
@@ -217,7 +231,8 @@ class: middle
 
 ???
 
-By any means necessary
+The mechanism for achieving, not important
+Could be swapped out later.
 
 ---
 
@@ -231,6 +246,12 @@ We did a lot of scary stuff to smooth over these bumps
 Retry assertions if they fail, retry clicks if they don't work
 Retry tests themselves if they fail
 
+Important part: MOMENTUM
+Smoothing over better than giving up
+Not all problems require precision solutions
+
+
+
 ---
 
 background-image: url(convoy.jpg)
@@ -241,8 +262,16 @@ class: full-width, center, middle
 
 Armored convoy to go to grocery store
 Is it overkill?  Probably
-Is it expensive?  Hell yeah.
-Will it 
+Is it expensive?  No doubt.
+Will fix our reliability problem?  Hell yes!
+
+---
+
+![check](check.png)![check](check.png)![check](check.png)![check](check.png)
+![check](check.png)![check](check.png)![check](check.png)![check](check.png)
+![check](check.png)![check](check.png)![check](check.png)![check](check.png)
+![check](check.png)![check](check.png)![check](check.png)![check](check.png)
+![check](check.png)![check](check.png)![check](check.png)![check](check.png)
 
 ---
 
@@ -277,20 +306,15 @@ duct tape, rubber bands.
 
 ---
 
-![check](check.png)![check](check.png)![check](check.png)![check](check.png)
-![check](check.png)![check](check.png)![check](check.png)![check](check.png)
-![check](check.png)![check](check.png)![check](check.png)![check](check.png)
-![check](check.png)![check](check.png)![check](check.png)![check](check.png)
-![check](check.png)![check](check.png)![check](check.png)![check](check.png)
-
----
-
 class: middle
 
 .pull-left[![yeah](fy220.png)]
+???
+Did we do it with a bunch of clever engineering?  No...
 --
 .pull-right[![poopsmith](poopsmith.png)]
-
+???
+We shoveled shit
 
 ---
 
@@ -330,7 +354,12 @@ class: full-width, center, middle
 
 ---
 
-# Introduction
+shovel shit to get there
+
+---
+
+# \#SSaaS
+
 
 ---
 
