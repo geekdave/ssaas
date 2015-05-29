@@ -26,9 +26,30 @@ class: center, middle
 
 ---
 
+class: middle
+
+## 4.
+
+## [ . . . ]
+
+## 5.
+
+???
+
+Something missing between 4 and 5
+
+A lot of technology is like this - leave out the details
+especially the shitty details, stuff you're gonna get stuck on
+
+---
+
 background-image: url(ponies.gif)
 
 class: center, middle
+
+???
+
+Right out of the gate -
 
 ---
 
@@ -36,9 +57,22 @@ class: center, middle
 
 # Dave Cadwallader
 
-## Core Web
+.pull-left[![yeah](cowboy2.jpg)]
+.pull-right[![yeah](walmartlabs.png)]
 
-![walmart labs logo](walmartlabs.jpg)
+???
+
+We create common infrastructure, build and automation tools to support devs working on www.walmart
+
+---
+
+background-image: url(pyramid.png)
+
+class: center, middle
+
+???
+
+Gaps in UTs - false assumptions between parts of your stack
 
 ---
 
@@ -50,6 +84,32 @@ class: center, middle
 
 At walmart - so many browsers
 Back to IE8
+
+Pain in the ass to test them all.  Huge waste of time.
+Automation efforts in the past, but all abandoned because they weren't useful.
+
+---
+
+background-image: url(sayno.gif)
+
+class: full-width, left, bottom, white
+
+???
+
+1. Slow
+2. Unreliable
+3. Don't isolate failures
+
+---
+
+background-image: url(challenge.png)
+
+class: full-width, left, bottom, white
+
+???
+
+We got this
+
 
 ---
 
@@ -84,11 +144,21 @@ background-image: url(nightwatch.jpg)
 
 class: center, middle
 
+???
+
+NodeJS - based adapter for Selenium
+
 ---
 
 background-image: url(lion2.jpg)
 
 class: center, middle
+
+???
+
+Got SauceLabs subscription - outsource browsers
+Huge collaborative test writing QE/Dev
+Turned it on - and...
 
 ---
 
@@ -140,6 +210,35 @@ class: center, middle
 
 ---
 
+10%.....20%.....30%.....40%.....50%.....60%.....70%.....80%.....90%.....100%
+
+![happy](happy.jpg)
+???
+Got so close - and flake at the end!
+--
+![happy](happy.jpg)
+--
+![happy](happy.jpg)
+--
+![happy](happy.jpg)
+--
+![happy](happy.jpg)
+--
+![rage](rage.jpeg)
+
+---
+
+background-image: url(realization.jpg)
+
+class: full-width, left, top
+
+???
+
+We had been thinking of end to end tests like unit tests
+Predictable environment that we could control... but nothing like that
+
+---
+
 background-image: url(cupboard.jpg)
 
 class: full-width, left, top
@@ -185,25 +284,7 @@ class: full-width, left, bottom, white
 
 ---
 
-background-image: url(brains.png)
-
-class: full-width, left, bottom, white
-
----
-
-background-image: url(pyramid.png)
-
-class: full-width, center, middle
-
----
-
-background-image: url(zombie-pyramid.png)
-
-class: full-width, center, middle
-
----
-
-# Ways that E2E Tests try to eat you
+# Lurking Zombies
 
 ## 1. Buggy webdrivers
 
@@ -215,11 +296,26 @@ class: full-width, center, middle
 
 ## 3. Service bugs/outages
 
+--
+
+## ???
+
 ???
 
 "Test flake" holding back real progress
 Seemed overwhelming to fix everything - whack-a-mole.
+New problems every day - can't possibly fix all
+
+---
+
+background-image: url(whatif.jpg)
+
+class: full-width, center, middle
+
+???
+
 But what if we could magically make the tests "not flakey" anymore?
+...without fixing individual problems?
 
 ---
 
@@ -243,14 +339,12 @@ class: full-width, center, middle
 ???
 
 We did a lot of scary stuff to smooth over these bumps
-Retry assertions if they fail, retry clicks if they don't work
+Retry assertions if they fail, inject
 Retry tests themselves if they fail
 
 Important part: MOMENTUM
 Smoothing over better than giving up
 Not all problems require precision solutions
-
-
 
 ---
 
@@ -260,7 +354,7 @@ class: full-width, center, middle
 
 ???
 
-Armored convoy to go to grocery store
+Call this Magellan - Armored convoy to go to grocery store
 Is it overkill?  Probably
 Is it expensive?  No doubt.
 Will fix our reliability problem?  Hell yes!
@@ -273,6 +367,22 @@ Will fix our reliability problem?  Hell yes!
 ![check](check.png)![check](check.png)![check](check.png)![check](check.png)
 ![check](check.png)![check](check.png)![check](check.png)![check](check.png)
 
+???
+
+Test reports clean and stable
+
+---
+
+![check](check.png)![check](check.png)![check](check.png)![check](check.png)
+![check](check.png)![check](check.png)![check](check.png)![check](check.png)
+![check](check.png)![check](check.png)![check](check.png)![check](check.png)
+![check](check.png)![check](redx.png)![check](check.png)![check](check.png)
+![check](check.png)![check](check.png)![check](check.png)![check](check.png)
+
+???
+
+If we got a test failure - it's real!
+
 ---
 
 10%.....20%.....30%.....40%.....50%.....60%.....70%.....80%.....90%.....100%
@@ -286,11 +396,8 @@ Will fix our reliability problem?  Hell yes!
 ![happy](happy.jpg)
 --
 ![happy](happy.jpg)
----
-
-10%.....20%.....30%.....40%.....50%.....60%.....70%.....80%.....90%.....100%
-
-![happy](happy.jpg)![happy](happy.jpg)![happy](happy.jpg)![happy](happy.jpg)![happy](happy.jpg)![happy](rage.jpeg)
+--
+![rage](rage.jpeg)
 
 ---
 
@@ -323,11 +430,14 @@ We shoveled shit
 ![happy](happy.jpg)![happy](happy.jpg)![happy](happy.jpg)![happy](happy.jpg)![happy](happy.jpg)![happy](happy.jpg)![happy](fy.jpeg)
 
 -----------------------------------------------------------------------------
-
+???
+But we thought about our journey, and what would have happened if we hadn't used the axiom hack
 --
 
 ![happy](happy.jpg)![happy](happy.jpg)![happy](rage.jpeg)
 
+???
+And how many others must have tried and given up...
 --
 
 ![happy](happy.jpg)![happy](happy.jpg)![happy](happy.jpg)![happy](happy.jpg)![happy](rage.jpeg)
@@ -335,7 +445,8 @@ We shoveled shit
 --
 
 ![happy](happy.jpg)![happy](happy.jpg)![happy](happy.jpg)![happy](rage.jpeg)
-
+???
+And how much collective wasted effort has gone into this problem...
 ---
 
 background-image: url(post1.gif)
@@ -354,12 +465,104 @@ class: full-width, center, middle
 
 ---
 
-shovel shit to get there
+background-image: url(swarm.png)
+
+class: full-width, center, middle
+
+???
 
 ---
 
+background-image: url(pr.gif)
+
+class: full-width, center, middle
+
+???
+
+---
+
+background-image: url(flakechart1.gif)
+
+class: full-width, center, middle
+
+???
+
+---
+
+background-image: url(flakechart2.gif)
+
+class: full-width, center, middle
+
+???
+
+---
+
+background-image: url(poopsmith.png)
+
+class: top, center
+
+# \#SSaSS
+
+# **S**hoveling **S**hit as a **S**ervice
+
+???
+
+shovel shit to get here
+
+---
+
+# Shit Shoveling 101
+
+-----------
+
+## 1. Momentum > Perfection
+
+???
+
+Getting stuck on shitty problems is often demoralizing and unproductive
+
+--
+
+## 2. Smoothing Over > Giving Up
+
+???
+
+All those 80% solved problems that never see the light of day
+
+--
+
+## 3. Useful > Precise
+
+???
+
+If you can help someone else smooth over a bump, doesn't matter how much duct tape and rubber bands you have
+
+--
+
+## 4. Open Source > Closed Source
+
+???
+
+Release when it's ready?  Nah- Release when it's useful (even in some small way)
+(Release when your corporate overlords finish the review)
+
+---
+
+background-image: url(battle.png)
+
+class: full-width, left, top, white
+
+# thank you!
+
+# @geek_dave
+
 # \#SSaaS
 
+
+???
+
+Follow me for magellan updates
+Come talk to us - Collaborate help build it
 
 ---
 
@@ -385,10 +588,19 @@ shovel shit to get there
   By: Getty Images
   http://abcnews.go.com/Health/Wellness/home-remedies-find-kitchen/story?id=24652838
 
+---
+
+# Credits
+
 * Convoy
 
   By: DVIDSHUB
   https://www.flickr.com/photos/dvids/5468695790
+
+* Browser Battle
+
+  By: Foice
+  http://foice.deviantart.com/art/114-firefox-vs-chrome-212832390
 
 momentum is key
 smoothing over is better than giving up

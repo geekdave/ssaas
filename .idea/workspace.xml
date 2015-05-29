@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5167040e-a0c3-482d-a174-5465105fb7dc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/presentation.md" afterPath="$PROJECT_DIR$/presentation.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
     </list>
     <ignored path="soup.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,8 +36,8 @@
       <file leaf-file-name="presentation.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/presentation.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.85391766">
-              <caret line="362" column="0" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6666667">
+              <caret line="74" column="59" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -236,8 +234,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/presentation.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85391766">
-          <caret line="362" column="0" selection-start-line="362" selection-start-column="0" selection-end-line="362" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6666667">
+          <caret line="74" column="59" selection-start-line="74" selection-start-column="59" selection-end-line="74" selection-end-column="59" />
           <folding />
         </state>
       </provider>
