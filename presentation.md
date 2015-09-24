@@ -39,7 +39,8 @@ class: middle
 Something missing between 4 and 5
 
 A lot of technology is like this - leave out the details
-especially the shitty details, stuff you're gonna get stuck on
+I call this the TROLL readme
+especially the shitty nitty-gritty details, stuff you're gonna get stuck on
 
 ---
 
@@ -50,6 +51,9 @@ class: center, middle
 ???
 
 Right out of the gate -
+I work for WalmartLabs and
+we kept running into the troll readme with regards to our e2e testing strategy
+and it really sucked...
 
 ---
 
@@ -63,6 +67,8 @@ class: center, middle
 ???
 
 We create common infrastructure, build and automation tools to support devs working on www.walmart
+
+We follow the test pyramid
 
 ---
 
@@ -86,7 +92,64 @@ At walmart - so many browsers
 Back to IE8
 
 Pain in the ass to test them all.  Huge waste of time.
+Because a pain to test - huge bisect effort
 Automation efforts in the past, but all abandoned because they weren't useful.
+Why?
+
+---
+
+background-image: url(selenium.png)
+
+class: full-width, left, bottom, white
+
+???
+
+Library with "drivers" for each major browser vendor/version
+Deep hooks into browser to "remote control" it over an HTTP API
+But... API not friendly
+
+---
+
+background-image: url(sauce.png)
+
+class: left, bottom, white
+
+???
+
+SauceLabs -
+
+---
+
+background-image: url(rube.gif)
+
+class: full-width, left, bottom, white
+
+???
+
+End to end testing like this
+tests DSL, translated by test library,
+
+---
+
+class: middle
+
+# **test flake (n)**
+
+# *when your tests sometimes fail for no good reason, creating false positive results*
+
+---
+
+# (see also: *waste everyone's time with this one weird trick. developers hate this!*)
+
+---
+
+background-image: url(ttl.png)
+
+class: full-width, left, bottom, white
+
+???
+
+Fellow teams trying to summit the same mountain
 
 ---
 
@@ -239,12 +302,26 @@ Predictable environment that we could control... but nothing like that
 
 ---
 
+background-image: url(soup.jpg)
+
+class: full-width, left, top
+
+???
+
+Soup === a test result (binary: pass/fail)
+
+---
+
 background-image: url(cupboard.jpg)
 
 class: full-width, left, top
 
 # Unit Tests
 
+???
+
+Get a result in the safety of your own home
+You control the environment - quick & easy
 
 ---
 
@@ -321,12 +398,15 @@ But what if we could magically make the tests "not flakey" anymore?
 
 class: middle
 
-**axiom (n)**
+# **axiom (n)**
 
-*...a premise or starting point of reasoning... a premise so evident as to be accepted as true without controversy.*
+# *...a premise or starting point of reasoning... a premise so evident as to be accepted as true without controversy.*
 
 ???
 
+Tool was breaking axiom!
+End devs should be able to count on test results as axium
+You worry about writing good tests - we worry about infrastructure
 The mechanism for achieving, not important
 Could be swapped out later.
 
@@ -354,10 +434,10 @@ class: full-width, center, middle
 
 ???
 
-Call this Magellan - Armored convoy to go to grocery store
 Is it overkill?  Probably
 Is it expensive?  No doubt.
 Will fix our reliability problem?  Hell yes!
+Anybody watch walk dead? Do they stop for zombies?
 
 ---
 
@@ -503,6 +583,31 @@ class: full-width, center, middle
 
 ???
 
+By Google giving up, they never get to research the flake
+But that's where we're at
+
+---
+
+background-image: url(ship.jpg)
+
+class: full-width, top, middle
+
+# Magellan
+
+???
+
+Code name (for now) - going to open source
+
+End to end test runner - hooks into other libraries such as Nightwatch as plugins.
+
+Not a replacement for nightwatch, protractor, "a test runner-runner"
+
+Commander for your fleet - conductor for your orchestra
+
+Smooth over test flake (but gives insight into what's flakey)
+Massively parallel runner
+Reporting
+
 ---
 
 background-image: url(poopsmith.png)
@@ -552,7 +657,7 @@ If you can help someone else smooth over a bump, doesn't matter how much duct ta
 ???
 
 Release when it's ready?  Nah- Release when it's useful (even in some small way)
-(Release when your corporate overlords finish the review)
+(being a large company, we have a process to follow)
 
 ---
 
@@ -563,6 +668,8 @@ class: full-width, left, top, white
 # thank you!
 
 # @geek_dave
+
+# ttlpodcast.com
 
 # \#SSaaS
 
@@ -609,7 +716,3 @@ Come talk to us - Collaborate help build it
 
   By: Foice
   http://foice.deviantart.com/art/114-firefox-vs-chrome-212832390
-
-momentum is key
-smoothing over is better than giving up
-certain amount of precision that certain problems don't need
